@@ -52,17 +52,54 @@ header nav ul li {
 }
 /* target content section */
 .content {
-    display: inline-block;
-    margin-left: 20px;
-    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .content-section {
-    display: inline-block;
+    display: flex;
     background-color: lightgrey;
     color: rgb(46, 115, 218);
     height: 350px;
     width: 1000px;
     margin: 20px;
     padding: 50px;
+}
+
+/* target work-section */
+.work-section h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid rgb(46, 115, 218);
+    font-size: 25px;
+    line-height: 1.1;
+}
+
+
+.work-content div {
+    min-height: 450px;
+    flex-basis: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(46, 115, 218);
+}
+.contact-info h4 {
+    color: white;
+    align-content: center;
+}
+
+.contact-info a {
+    margin-left: 25px;
+    margin-top: 35px;
+    color: white;
 }
