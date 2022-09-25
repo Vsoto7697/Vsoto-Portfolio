@@ -1,105 +1,176 @@
 /*target all elements*/
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 /*target body elements*/
 body {
-    background-color: white;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
+  background-color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
 }
 
 /*target link*/
 a {
-    color: black;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 header {
-    background-color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 20px;
+  background-color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 20px;
+}
+
+.container {
+  background: linear-gradient(
+    to right,
+    white 0%,
+    white 55%,
+    rgb(46, 115, 218) 45%,
+    rgb(46, 115, 218) 100%
+  );
 }
 
 header h1 {
-    color: orange;
-    display:inline-block;
-    font-size: 48px;
+  color: orange;
+  display: inline-block;
+  font-size: 48px;
 }
 
 header nav {
-    float: right;
-    font-size: 20px;
-    margin-right: 20px;
-    padding-top: 15px;
+  float: right;
+  font-size: 20px;
+  margin-right: 20px;
+  padding-top: 15px;
 }
 
 header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
+  display: inline-block;
+  margin-left: 25px;
 }
 
 /*target hero image*/
 .hero img {
-    flex: auto;
-    height: 450px;
-    margin-bottom: 20px;
-    object-fit: cover;
-    width: 100%;
+  flex: auto;
+  height: 450px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  width: 100%;
 }
 /* target content section */
 .content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .content-section {
-    display: flex;
-    background-color: lightgrey;
-    color: rgb(46, 115, 218);
-    height: 350px;
-    width: 1000px;
-    margin: 20px;
-    padding: 50px;
+  background-color: lightgrey;
+  color: rgb(46, 115, 218);
+  display: flex;
+  height: 350px;
+  margin: 20px;
+  padding: 50px;
+  width: 1000px;
 }
 
 /* target work-section */
-.work-section h2 {
-    flex: 0 0 20%;
-    text-align: right;
-    padding-right: 15px;
-    border-right: 4px solid rgb(46, 115, 218);
-    font-size: 25px;
-    line-height: 1.1;
+.work-section {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 25px 0;
+  padding: 10px 0;
 }
 
+.work-section p {
+  color: rgb(46, 115, 218);
+  margin-bottom: 20px;
+  transition: all 0.3s;
+}
 
-.work-content div {
-    min-height: 450px;
-    flex-basis: 100%;
-    background-size: cover;
-    background-position: center;
+.work-section h2 {
+  border-right: 4px solid rgb(46, 115, 218);
+  flex: 0 0 20%;
+  font-size: 3vw;
+  line-height: 5in;
+  padding-right: 15px;
+  text-align: right;
+}
+
+.work-section h2:hover {
+  border: 5px orange;
+  color: orange;
+  transition: all 0.25s;
+}
+
+.work-section > div {
+  flex: 0 0 77%;
+}
+/* target work content*/
+.work-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.work-item:hover {
+  border: 5px orange;
+  color: orange;
+  transition: all 0.25s;
+}
+
+.work-item {
+  align-items: flex-end;
+  background-color: lightgray;
+  background-position: center;
+  background-size: cover;
+  border: 5px solid lightgray;
+  display: flex;
+  margin: 16px;
+  padding: 0 0 20px 0;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+.work-item:first-child {
+  background-position: center;
+  background-size: cover;
+  flex-basis: 100%;
+  min-height: 450px;
+}
+
+.work-item h3 {
+  font-size: 1.6rem;
+}
+
+.work-item div {
+  background-color: rgb(46, 115, 218);
+  padding: 8px 10px;
 }
 
 .contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-    background-color: rgb(46, 115, 218);
+  align-items: center;
+  background-color: rgb(46, 115, 218);
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: space-around;
 }
 .contact-info h4 {
-    color: white;
-    align-content: center;
+  align-content: center;
+  color: white;
 }
 
 .contact-info a {
-    margin-left: 25px;
-    margin-top: 35px;
-    color: white;
+  color: white;
+  margin-left: 25px;
+  margin-top: 35px;
 }
