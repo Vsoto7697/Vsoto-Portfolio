@@ -36,3 +36,16 @@ header nav {
     margin-right: 20px;
     padding-top: 15px;
 }
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/*target hero image*/
+.hero img {
+    height: 300px;
+    margin-bottom: 25px;
+    object-fit: cover;
+    width: 100%;
+}
