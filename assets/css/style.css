@@ -8,9 +8,10 @@
 /*target body elements*/
 body {
   background-color: white;
+  font-size: 16px;
+
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: 16px;
 }
 
 /*target link*/
@@ -21,9 +22,14 @@ a {
 
 header {
   background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 20px;
+
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  padding: 20px;
 }
 
 .container {
@@ -40,18 +46,23 @@ header h1 {
   color: orange;
   display: inline-block;
   font-size: 48px;
+  padding-left: 50px;
 }
 
-header nav {
-  float: right;
-  font-size: 20px;
-  margin-right: 20px;
-  padding-top: 15px;
+header nav ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style: none;
+  padding-right: 0px;
 }
 
 header nav ul li {
-  display: inline-block;
+  font-size: 20px;
   margin-left: 25px;
+  margin-right: 20px;
+  padding-top: 15px;
 }
 
 /*target hero image*/
@@ -63,20 +74,28 @@ header nav ul li {
   width: 100%;
 }
 /* target content section */
-.content {
+
+.content-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
-.content-section {
-  background-color: lightgrey;
-  color: rgb(46, 115, 218);
-  display: flex;
-  height: 350px;
-  margin: 20px;
-  padding: 50px;
-  width: 1000px;
+.content-section p {
+  border: 5px orange;
+  color: orange;
+  transition: all 0.3s;
+}
+
+.content-section h2 {
+  border-right: 4px solid rgb(46, 115, 218);
+  flex: 0 0 20%;
+  font-size: 3vw;
+  line-height: 2in;
+  padding-right: 15px;
+  text-align: right;
 }
 
 /* target work-section */
@@ -88,12 +107,6 @@ header nav ul li {
   justify-content: space-between;
   margin: 25px 0;
   padding: 10px 0;
-}
-
-.work-section p {
-  color: rgb(46, 115, 218);
-  margin-bottom: 20px;
-  transition: all 0.3s;
 }
 
 .work-section h2 {
@@ -108,7 +121,7 @@ header nav ul li {
 .work-section h2:hover {
   border: 5px orange;
   color: orange;
-  transition: all 0.25s;
+  transition: all 0.3s;
 }
 
 .work-section > div {
@@ -173,4 +186,24 @@ header nav ul li {
   color: white;
   margin-left: 25px;
   margin-top: 35px;
+}
+
+.Surf-Report-Content {
+  background-image: url(/assets/images/surfreport.jpeg);
+}
+
+.LED-Wall-Content {
+  background-image: url(/assets/images/ledwall.jpeg);
+}
+
+.Calculator-content {
+  background-image: url(/assets/images/calculator.jpeg);
+}
+
+.Pastel-Puzzels-content {
+  background-image: url(/assets/images/puzzle.jpeg);
+}
+
+.run-Buddy-content {
+  background-image: url(/assets/images/runbuddy.jpeg);
 }
