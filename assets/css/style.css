@@ -1,0 +1,73 @@
+/*target universal selector */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Target root element of html document*/
+:root {
+  --primary-color: rgb(54, 108, 255);
+  --secondary-color: lightgray;
+  --tertiary-color: black;
+}
+
+/*target body elemene in htmlt*/
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #ededf6;
+}
+
+/*target section element in html*/
+section {
+  padding: 10px;
+}
+
+/*target header element and navigational links in html*/
+header {
+  padding: 15px 6% 15px 0; /* top| right | bottom | left  */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--secondary-color);
+  }
+
+  header a {
+    text-decoration: none;
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+header h1 {
+    font-size: 42px;
+    color: orange;
+    margin: 0;
+    background-color: var(--primary-color);
+    width: 25%;
+    text-align: center;
+}
+
+header nav {
+    margin: 10px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    margin: 10px 15px;
+    font-size: 24px;
+}
+
+
+/**/
+
