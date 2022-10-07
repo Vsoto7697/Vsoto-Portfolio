@@ -4,21 +4,22 @@
 
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Victor Soto's Portfolio</title>
   </head>
 
   <!--Content within wepage-->
 
   <body>
-    <header class="container">
+    <header>
       <h1>Victor Soto</h1>
 
       <!--Navigation Tag used to declare the navigational section for the website-->
       <nav>
         <ul>
           <li>
-            <a href="#About-Me">About Me</a>
+            <a href="#about-me">About Me</a>
           </li>
           <li>
             <a href="#work">Work</a>
@@ -27,7 +28,7 @@
             <a href="#contact">Contact Me</a>
           </li>
           <li>
-            <a href="#Resume">Resume</a>
+            <a href="#resume">Resume</a>
           </li>
         </ul>
       </nav>
@@ -35,73 +36,76 @@
 
     <!--Hero Image-->
     <section class="hero">
-      <img
-        src="/assets/images/Queensskyview.jpeg"
-        alt="Queens, New York skyview"
-      />
+      <div class="hero-section">
+        <img src="assets/images/Queensskyview.jpeg" alt="cityskyview header" />
+      </div>
     </section>
 
-    <main class="content">
-      <!--About Me Section-->
-      <section id="About-Me" class="content-section">
-        <h2>About Me</h2>
-
+    <!--About Me Section-->
+    <section class="sections" id="about-me">
+      <h3>About Me</h3>
+      <div class="sections-texts">
         <p></p>
-      </section>
+        <p></p>
+      </div>
+    </section>
 
-      <!--Work section-->
-      <section id="work" class="work-section">
-        <h2>Work</h2>
+    <!--Work section-->
+    <section class="sections" id="work">
+      <h3>Work</h3>
 
-        <div class="work-content">
-          <a href="#" class="work-item Surf-Report-Content">
+      <section class="work-layout" id="work">
+        <div class="work-container">
+          <a href="#" class="container-item container-work-item-1">
             <div>
-              <h3>Surf Report</h3>
+              <p>Surf Report</p>
               <span>MERN STACK</span>
             </div>
           </a>
 
-          <a href="#" class="work-item LED-Wall-Content">
+          <a href="#" class="container-item container-work-item-2">
             <div>
-              <h3>LED Wall</h3>
+              <p>LED Wall</p>
               <span>Node/IoT</span>
             </div>
           </a>
 
-          <a href="#" class="work-item Calculator-content">
+          <a href="#" class="container-item container-work-item-3">
             <div>
-              <h3>Calculator</h3>
+              <p>Calculator</p>
               <span>React/JavaScript/CSS</span>
             </div>
           </a>
 
-          <a href="#" class="work-item Pastel-Puzzels-content">
+          <a href="#" class="container-item container-work-item-4">
             <div>
-              <h3>Pastel Puzzels</h3>
+              <p>Pastel Puzzels</p>
               <span>MERN Stack</span>
             </div>
           </a>
 
-          <a href="#" class="work-item run-Buddy-content">
+          <a href="#" class="container-item container-work-item-5">
             <div>
-              <h3>Run Buddy</h3>
+              <p>Run Buddy</p>
               <span>HTML/CSS</span>
             </div>
           </a>
         </div>
       </section>
-    </main>
+    </section>
 
-    <!--Contact info section-->
-    <header class="contact-info" id="contact">
-      <h4>Contact Me</h4>
-      <div>
-        <address>
-          <a href="tel:+8456336374">1 (845) 633-6374</a>
-          <a href="mailto:Vsoto7697@gmail.com">Vsoto7697@gmail.com</a>
-          <a href="https://github.com/Vsoto7697">GitHub</a>
-        </address>
+    <!--Contact Information-->
+    <section class="sections" id="contact">
+      <h3>Contact Me</h3>
+      <div class="address-links">
+        <div class="contact-infoformation">
+            <a href="tel:+8456336374">1 (845) 633-6374</a>
+            <a href="mailto:Vsoto7697@gmail.com">Vsoto7697@gmail.com</a>
+            <a href="https://github.com/Vsoto7697">GitHub</a>
+            <a href="https://www.linkedin.com/in/victor-soto-483066120/">LinkedIn</a>
+        </div>
       </div>
-    </header>
+    </section>
+
   </body>
 </html>
