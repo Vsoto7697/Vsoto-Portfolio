@@ -12,11 +12,10 @@
   --tertiary-color: black;
 }
 
-/*target body elemene in htmlt*/
+/*target body elements in html*/
 body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
   background-color: #ededf6;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /*target section element in html*/
@@ -26,60 +25,59 @@ section {
 
 /*target header element and navigational links in html*/
 header {
+  align-items: center;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 15px 6% 15px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: var(--secondary-color);
-  }
+}
 
-  header a {
-    text-decoration: none;
-    color: var(--primary-color);
-    border-bottom: 3px solid var(--primary-color);
+header a {
+  border-bottom: 3px solid var(--primary-color);
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
 header h1 {
-    font-size: 42px;
-    color: orange;
-    margin: 0;
-    background-color: var(--primary-color);
-    width: 25%;
-    text-align: center;
+  background-color: var(--primary-color);
+  color: orange;
+  font-size: 42px;
+  margin: 0;
+  text-align: center;
+  width: 25%;
 }
 
 header nav {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
 }
 
 header nav ul li a {
-    margin: 10px 15px;
-    font-size: 24px;
+  font-size: 24px;
+  margin: 10px 15px;
 }
-
 
 /*target banner element from html*/
 .banner {
-  background-image: url("/assets/images/Queensskyview.jpeg");
-  background-size: cover;
-  background-position: center;
+  align-items: flex-end;
   background-blend-mode: soft-light;
-  min-height: 35vh;
-  padding: 2% 6%;
+  background-image: url("/assets/images/Queensskyview.jpeg");
+  background-position: center;
+  background-size: cover;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  min-height: 35vh;
+  padding: 2% 6%;
   text-align: right;
 }
 
@@ -90,45 +88,45 @@ header nav ul li a {
 .banner h2 {
   background-color: transparent;
   color: transparent;
-  margin-top: 20px;
-  margin-bottom: 15vmin;
-  padding: 5px 10px;
+  display: inline;
   font-size: 2.3rem;
   line-height: 1.2;
-  display: inline;
+  margin-bottom: 15vmin;
+  margin-top: 20px;
+  padding: 5px 10px;
   transition: all 0.3s;
 }
 .banner h2:hover {
-  transition: all 0.30s;
-  color:var(--primary-color);
   background-color: orange;
+  color: var(--primary-color);
+  transition: all 0.3s;
 }
 
 /* Target Section elements in html */
 .sections {
+  align-items: stretch;
   color: var(--tertiary-color);
-  margin: 25px 0;
-  padding: 10px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: stretch;
   justify-content: space-between;
+  margin: 25px 0;
+  padding: 10px 0;
 }
 
 .sections > h3 {
-  flex: 0 0 20%;
-  text-align: right;
-  padding-right: 20px;
   border-right: 6px solid var(--primary-color);
-  font-size: 3.5vw;
+  flex: 0 0 20%;
+  font-size: 3vw;
   line-height: 1.1;
+  padding-right: 20px;
+  text-align: right;
 }
 
 .sections h3:hover {
-  transition: all 0.30s;
-  color: var(--primary-color);
   border-right: 6px solid orange;
+  color: var(--primary-color);
+  transition: all 0.3s;
 }
 
 .sections > div {
@@ -139,31 +137,27 @@ header nav ul li a {
   margin-bottom: 20px;
 }
 
-.sections p:hover {
-  color: var(--primary-color);
-}
-
-/*target work section*/
+/*target work section in html*/
 .work-container {
   display: grid;
-  grid-auto-rows: minmax(100px,auto);
-  height: 80vh;
   flex: auto;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 10px;
+  height: 80vh;
   padding: 0 30px;
-  grid-gap: 10px; 
-  width: 60vh;   
+  width: 60vh;
 }
 
 .container-item {
-  width: 100%;
-  height: auto;
-  max-width: auto;
-  background-size: cover;
-  display: flex;
-  justify-content: flex-start;
   align-items: flex-end;
+  background-size: cover;
   background: cover;
   border: 5px solid orange;
+  display: flex;
+  height: auto;
+  justify-content: flex-start;
+  max-width: auto;
+  width: 100%;
 }
 
 .container-item a {
@@ -171,48 +165,97 @@ header nav ul li a {
 }
 
 .container-work-item-1 {
-  grid-column: 1 / span 2 ;
-  background-image: url("/assets/images/surfreport.jpeg");
+  background-image: url("/assets/images/screenshotofrunbuddy.jpeg");
+  grid-column: 1 / span 2;
 }
 
 .container-work-item-2 {
-  grid-column: 1 / span 1 ;
-  grid-row: 2 / span 1;
   background-image: url("/assets/images/ledwall.jpeg");
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
 }
 
 .container-work-item-3 {
-  grid-column: 2 / span 1 ;
+  background-image: url("/assets/images/Taskinatorwebsitescreenshot.png");
+  grid-column: 2 / span 1;
   grid-row: 2 / span 1;
-  background-image: url("/assets/images/calculator.jpeg");
 }
 
 .container-work-item-4 {
-  grid-column: 1 / span 1 ;
+  background-image: url("/assets/images/horiseonscreenshot.png");
+  grid-column: 1 / span 1;
   grid-row: 3 / span 1;
-  background-image: url("/assets/images/calculator.jpeg");
 }
 
 .container-work-item-5 {
-  grid-column: 2 / span 1 ;
-    grid-row: 3 / span 1;
-    background-image: url("/assets/images/runbuddy.jpeg");
+  background-image: url("/assets/images/Screenshotofpasswordgenerator.png");
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
 }
 
 .container-item p {
-  margin: 20px 10px 20px 0; 
-  padding: 10px; 
-  background-color:var(--primary-color);
-  font-size: 20px;
+  background-color: var(--primary-color);
   color: orange;
+  font-size: 20px;
+  margin: 20px 10px 20px 0;
+  padding: 10px;
+}
+
+.container-item p:hover {
+  background-color: orange;
+  color: var(--primary-color);
+  transition: all 0.3s;
 }
 
 .container-item span {
-  font-size: 12px;
   color: var(--secondary-color);
+  font-size: 12px;
 }
 
 .container-item:hover {
+  border-color: var(--primary-color);
   opacity: 0.8;
+  transition: all 0.3s;
 }
 
+/*target contact information in html*/
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  justify-content: space-around;
+  padding: 15px;
+  width: 100%;
+}
+
+.contact a {
+  border-bottom: 3px solid var(--tertiary-color);
+  border-radius: 5px;
+  color: var(--secondary-color);
+  font-weight: bold;
+  margin: 0 30px;
+  text-decoration: none;
+}
+
+.address-links {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  justify-content: space-around;
+  padding: 18px;
+  width: 100%;
+}
+
+.address-links a {
+  border-bottom: 3px solid var(--primary-color);
+  border-radius: 0.5px;
+  color: var(--primary-color);
+  margin: 0 30px;
+  text-decoration: none;
+}
+
+.address-links a:hover {
+  border-bottom: 3px solid orange;
+  color: orange;
+  transition: all 0.3s;
+}
