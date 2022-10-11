@@ -114,7 +114,7 @@ header nav ul li a {
   padding: 10px 0;
 }
 
-.sections > h3 {
+.sections > h2 {
   border-right: 6px solid var(--primary-color);
   flex: 0 0 20%;
   font-size: 3vw;
@@ -123,7 +123,7 @@ header nav ul li a {
   text-align: right;
 }
 
-.sections h3:hover {
+.sections h2:hover {
   border-right: 6px solid orange;
   color: var(--primary-color);
   transition: all 0.3s;
@@ -288,7 +288,7 @@ header nav ul li a {
 /* ADJUST SCREEN TO FIT TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
   
-  .sections h3 {
+  .sections h2 {
       flex: 1 100%;
       text-align: center;
     }
@@ -297,7 +297,7 @@ header nav ul li a {
 /* ADJUST SCREEN TO FIT MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
   
-  .sections h3 {
+  .sections h2 {
       flex: 1 100%;
       text-align: center;
     }
