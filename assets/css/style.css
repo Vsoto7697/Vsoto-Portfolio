@@ -178,19 +178,19 @@ header nav ul li a {
 .container-work-item-3 {
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
-  background-image: url('/images/taskinatorwebsitescreenshot.png');
+  background-image: url('/images/taskinatorwebsitescreenshot.jpeg');
 }
 
 .container-work-item-4 {
   grid-column: 1 / span 1;
   grid-row: 3 / span 1;
-  background-image: url('/images/horiseonscreenshot.png');
+  background-image: url('/images/horiseonscreenshot.jpeg');
 }
 
 .container-work-item-5 {
   grid-column: 2 / span 1;
   grid-row: 3 / span 1;
-  background-image: url('/images/screenshotofpasswordgenerator.png');
+  background-image: url('/images/screenshotofpasswordgenerator.jpeg');
 }
 
 .container-item p {
