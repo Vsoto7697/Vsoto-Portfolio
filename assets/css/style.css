@@ -165,12 +165,12 @@ header nav ul li a {
 }
 
 .container-work-item-1 {
-  background-image: url('/images/runbuddy.jpeg');
+  background-image: url('/images/runbuddy.jpg');
   grid-column: 1 / span 2;
 }
 
 .container-work-item-2 {
-  background-image: url('https://github.com/Vsoto7697/Vsoto-Portfolio/blob/main/images/ledwall.jpeg');
+  background-image: url('/images/ledwall.jpg');
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
 }
@@ -178,19 +178,19 @@ header nav ul li a {
 .container-work-item-3 {
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
-  background-image: url('/images/taskinatorwebsitescreenshot.jpeg');
+  background-image: url('/images/taskinatorwebsitescreenshot.jpg');
 }
 
 .container-work-item-4 {
   grid-column: 1 / span 1;
   grid-row: 3 / span 1;
-  background-image: url('/images/horiseonscreenshot.jpeg');
+  background-image: url('/images/horiseonscreenshot.jpg');
 }
 
 .container-work-item-5 {
   grid-column: 2 / span 1;
   grid-row: 3 / span 1;
-  background-image: url('/images/screenshotofpasswordgenerator.jpeg');
+  background-image: url('/images/screenshotofpasswordgenerator.jpg');
 }
 
 .container-item p {
