@@ -71,7 +71,7 @@ header nav ul li a {
 .banner {
   align-items: flex-end;
   background-blend-mode: soft-light;
-  background-image: url('/images/queensskyview.jpeg');
+  background-image: url('/assets/images/queensskyview.jpeg');
   background-position: center;
   background-size: cover;
   display: flex;
@@ -165,12 +165,12 @@ header nav ul li a {
 }
 
 .container-work-item-1 {
-  background-image: url('/images/runbuddy.jpg');
+  background-image: url('/assets/images/runbuddy.jpg');
   grid-column: 1 / span 2;
 }
 
 .container-work-item-2 {
-  background-image: url('/images/ledwall.jpg');
+  background-image: url('/assets/images/ledwall.jpg');
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
 }
@@ -178,19 +178,19 @@ header nav ul li a {
 .container-work-item-3 {
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
-  background-image: url('/images/taskinatorwebsitescreenshot.jpg');
+  background-image: url('/assets/images/taskinatorwebsitescreenshot.jpg');
 }
 
 .container-work-item-4 {
   grid-column: 1 / span 1;
   grid-row: 3 / span 1;
-  background-image: url('/images/horiseonscreenshot.jpg');
+  background-image: url('/assets/images/horiseonscreenshot.jpg');
 }
 
 .container-work-item-5 {
   grid-column: 2 / span 1;
   grid-row: 3 / span 1;
-  background-image: url('/images/screenshotofpasswordgenerator.jpg');
+  background-image: url('/assets/images/screenshotofpasswordgenerator.jpg');
 }
 
 .container-item p {
