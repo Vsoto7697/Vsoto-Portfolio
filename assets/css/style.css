@@ -71,7 +71,7 @@ header nav ul li a {
 .banner {
   align-items: flex-end;
   background-blend-mode: soft-light;
-  background-image: url('https://github.com/Vsoto7697/Vsoto-Portfolio/blob/38c820a96e775785a7626f6f973c30526256baef/assets/images/Queensskyview.jpeg');
+  background-image: url('..images/queensskyview.jpeg');
   background-position: center;
   background-size: cover;
   display: flex;
