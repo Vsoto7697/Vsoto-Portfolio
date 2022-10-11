@@ -145,7 +145,7 @@ header nav ul li a {
   grid-gap: 10px;
   height: 80vh;
   padding: 0 30px;
-  width: 60vh;
+  width: 80vh;
 }
 
 .container-item {
@@ -259,3 +259,46 @@ header nav ul li a {
   color: orange;
   transition: all 0.3s;
 }
+
+/*ADJUST SCREEN TO FIT SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  
+  header {
+      justify-content: center;
+      padding-bottom: 0;
+      position: relative;
+    }
+
+  header h1 {
+      text-align: center;
+      width: 100%;
+    }
+
+  header nav ul {
+      justify-content: center;
+      margin-top: 20px;
+      width: 100%;
+    }
+
+  header nav ul li a {
+      font-size: 20px;
+    }
+}
+
+/* ADJUST SCREEN TO FIT TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  
+  .sections h3 {
+      flex: 1 100%;
+      text-align: center;
+    }
+}
+
+/* ADJUST SCREEN TO FIT MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  
+  .sections h3 {
+      flex: 1 100%;
+      text-align: center;
+    }
+}  
