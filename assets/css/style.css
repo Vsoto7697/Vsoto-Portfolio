@@ -66,12 +66,12 @@ header nav ul li a {
   font-size: 24px;
   margin: 10px 15px;
 }
-
+$url:'/assets/images/Queensskyview.jpeg':
 /*target banner element from html*/
 .banner {
   align-items: flex-end;
   background-blend-mode: soft-light;
-  background-image: url('/assets/images/Queensskyview.jpeg');
+  background-image: url($url);
   background-position: center;
   background-size: cover;
   display: flex;
