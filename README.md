@@ -14,7 +14,7 @@ Screenshot of website
 
 ![Screenshot](assets/Images/Screenshotofpasswordgenerator.png)
 
-To visit please click on link [link](https://vsoto7697.github.io/Vsoto-Portfolio/)
+To visit please click on link [link](https://vsoto7697.github.io/Vsoto-Portfolio)
 
 ## Challenges
 One thing I had trouble on was utilizing the flex feature to wrap my content oaround through a variety of different screen sizes that consisted of cell phone screens, tablets and desktops. I also struggled with deploying my url and using the functionality of pushing and pulling to and from github. I believe that my biggest challenge was . 
