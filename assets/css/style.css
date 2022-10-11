@@ -165,7 +165,7 @@ header nav ul li a {
 }
 
 .container-work-item-1 {
-  background-image: url('/assets/images/runbuddy.jpeg');
+  background-image: url('/assets/..images/runbuddy.jpeg');
   grid-column: 1 / span 2;
 }
 
