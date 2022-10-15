@@ -12,7 +12,7 @@ Clone the repository locally and double click `index.html` or click on the link 
 
 Screenshot of website
 
-![Screenshot](assets/Images/Screenshotofpasswordgenerator.png)
+![Screenshot](assets/images/portfolioscreenshot.png)
 
 To visit please click on link [link](https://vsoto7697.github.io/Vsoto-Portfolio)
 
