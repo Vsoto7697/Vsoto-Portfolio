@@ -1,7 +1,7 @@
 # Vsoto-Portfolio
 
 ## Description
-In addition to any other relevant personal projects, examples of projects that demonstrate the skills and knowledge acquired during the Coding Bootcamp course will be included in the professional portfolio.A digital CV, an About Me and Contact section, and a portfolio for prospective employers to view are also included in the portfolio.
+In addition to any other relevant personal projects, examples of projects that demonstrate the skills and knowledge acquired during the Coding Bootcamp course will be included in the professional portfolio.A digital CV, and About Me and Contact section, and a portfolio for prospective employers to view are also included in the portfolio.
 
 ## Installation
 

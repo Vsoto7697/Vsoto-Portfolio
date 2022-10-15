@@ -103,7 +103,7 @@ header nav ul li a {
 }
 
 /* Target Section elements in html */
-.sections {
+.section {
   align-items: stretch;
   color: var(--tertiary-color);
   display: flex;
@@ -114,7 +114,7 @@ header nav ul li a {
   padding: 10px 0;
 }
 
-.sections > h2 {
+.section > h2 {
   border-right: 6px solid var(--primary-color);
   flex: 0 0 20%;
   font-size: 3vw;
@@ -123,18 +123,24 @@ header nav ul li a {
   text-align: right;
 }
 
-.sections h2:hover {
+.section h2:hover {
   border-right: 6px solid orange;
   color: var(--primary-color);
   transition: all 0.3s;
 }
 
-.sections > div {
+.section > div {
   flex: 0 0 77%;
 }
 
-.sections p {
+.section p {
   margin-bottom: 20px;
+}
+
+.aboutme-img {
+  display: block;
+  height: auto;
+  max-width: 20%;
 }
 
 /*target work section in html*/
@@ -176,21 +182,21 @@ header nav ul li a {
 }
 
 .container-work-item-3 {
+  background-image: url('../images/taskinatorwebsitescreenshot.jpg');
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
-  background-image: url('../images/taskinatorwebsitescreenshot.jpg');
 }
 
 .container-work-item-4 {
+  background-image: url('../images/horiseonscreenshot.jpg');
   grid-column: 1 / span 1;
   grid-row: 3 / span 1;
-  background-image: url('../images/horiseonscreenshot.jpg');
 }
 
 .container-work-item-5 {
+  background-image: url('../images/screenshotofpasswordgenerator.jpg');
   grid-column: 2 / span 1;
   grid-row: 3 / span 1;
-  background-image: url('../images/screenshotofpasswordgenerator.jpg');
 }
 
 .container-item p {
@@ -261,6 +267,29 @@ header nav ul li a {
 }
 
 /*ADJUST SCREEN TO FIT SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {  
+  header {
+      justify-content: center;
+      padding-bottom: 0;
+      position: relative;
+    }
+
+  header h1 {
+      text-align: center;
+      width: 100%;
+    }
+
+  header nav ul {
+      justify-content: center;
+      margin-top: 20px;
+      width: 100%;
+    }
+
+  header nav ul li a {
+      font-size: 20px;
+    }
+   }
+/* SCREEN ADJUSTMENT FOR SMALLER DESKTOP SCREENS */
 @media screen and (max-width: 980px) {
   
   header {
@@ -285,20 +314,18 @@ header nav ul li a {
     }
 }
 
-/* ADJUST SCREEN TO FIT TABLETS AND SMALLER */
-@media screen and (max-width: 768px) {
-  
+/* SCREEN ADJUSTMENT FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {  
   .sections h2 {
       flex: 1 100%;
       text-align: center;
     }
-}
+   }
 
-/* ADJUST SCREEN TO FIT MOBILE PHONES AND SMALLER */
-@media screen and (max-width: 575px) {
-  
+/* SCREEN ADJUSTMENT FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {  
   .sections h2 {
       flex: 1 100%;
       text-align: center;
     }
-}  
+   }  
